@@ -3,7 +3,7 @@
 <eagle version="9.6.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -232,6 +232,18 @@
 <smd name="27" x="-1" y="2.055" dx="0.62" dy="0.27" layer="1" roundness="70" rot="R270"/>
 <smd name="28" x="-1.5" y="2.055" dx="0.62" dy="0.27" layer="1" roundness="70" rot="R270"/>
 </package>
+<package name="PAD.03X.05" urn="urn:adsk.eagle:footprint:13270951/1" library_version="33">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+<text x="-2.413" y="0.889" size="1.016" layer="21" font="vector" ratio="15" distance="70">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="LMZ21701" urn="urn:adsk.eagle:package:12971317/2" type="model" library_version="26">
@@ -243,6 +255,19 @@
 <package3d name="QFN50P400X400X60-28N" urn="urn:adsk.eagle:package:18399455/2" type="model" library_version="28">
 <packageinstances>
 <packageinstance name="QFN50P400X400X60-28N"/>
+</packageinstances>
+</package3d>
+<package3d name="PAD.03X.05" urn="urn:adsk.eagle:package:13270955/1" type="box" library_version="33">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="PAD.03X.05"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -313,6 +338,12 @@
 <pin name="PF0-OSC_IN" x="22.86" y="10.16" length="middle" rot="R180"/>
 <pin name="PF1-OSC_OUT" x="22.86" y="7.62" length="middle" rot="R180"/>
 <pin name="VSS" x="22.86" y="-20.32" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="TEST-POINT" urn="urn:adsk.eagle:symbol:13270948/1" library_version="32">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<text x="1.27" y="1.27" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
+<circle x="3.556" y="0" radius="1" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -428,6 +459,26 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 <attribute name="PACKAGE" value="UFQFN-28 STMicroelectronics"/>
 <attribute name="PRICE" value="None"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAD-SMD-ROUND-1.27" urn="urn:adsk.eagle:component:18475177/2" prefix="TP" library_version="33">
+<description>&lt;h3&gt;SMD PAD&lt;/h3&gt;
+&lt;p&gt;Bare copper pad, 1.27x1.27 mm (0.05x0.05")</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PAD" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1291,6 +1342,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <schematic_group name="LED"/>
 <schematic_group name="I2C_PULLUP"/>
 <schematic_group name="STEERING_SERVO_FEEDBACK"/>
+<schematic_group name="START_MODULE"/>
 </groups>
 <parts>
 <part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
@@ -1352,6 +1404,12 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <part name="FB-" library="wirepad" library_urn="urn:adsk.eagle:library:412" deviceset="SMD2" device="" package3d_urn="urn:adsk.eagle:package:30839/1"/>
 <part name="SUPPLY13" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 <part name="GND14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
+<part name="SM_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="SM_START" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="SUPPLY14" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
+<part name="GND15" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
+<part name="SM_KILL" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="SM_GND" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1361,10 +1419,18 @@ MCU Board</text>
 <text x="345.44" y="20.32" size="2.54" layer="94">Isak Åslund</text>
 <text x="170.18" y="38.1" size="1.778" layer="97" grouprefs="STEERING_SERVO_FEEDBACK">Servo signal is created by a voltage divider,
 the divider is  a potentiometer in the servo gearbox.</text>
-<wire x1="165.1" y1="45.72" x2="231.14" y2="45.72" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
-<wire x1="231.14" y1="45.72" x2="231.14" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
-<wire x1="231.14" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
+<wire x1="165.1" y1="45.72" x2="236.22" y2="45.72" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
+<wire x1="236.22" y1="45.72" x2="236.22" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
+<wire x1="236.22" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="165.1" y1="33.02" x2="165.1" y2="45.72" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
+<text x="30.48" y="22.86" size="2.54" layer="94">Check before production:
+- Check Hardware app note
+- 3.3V reg again.
+- That the FB on servo indeed is a pot
+  and does not need V_divider
+- Double check pinout
+- Double check ERC + DRC
+- Check Silcscreen</text>
 </plain>
 <instances>
 <instance part="S1" gate="G$1" x="299.72" y="220.98" smashed="yes" grouprefs="POWER">
@@ -1574,6 +1640,24 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <instance part="GND14" gate="1" x="195.58" y="53.34" smashed="yes" grouprefs="STEERING_SERVO_FEEDBACK">
 <attribute name="VALUE" x="195.58" y="53.086" size="1.778" layer="96" align="top-center"/>
 </instance>
+<instance part="SM_3.3V" gate="G$1" x="279.4" y="71.12" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="280.67" y="72.39" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SM_START" gate="G$1" x="279.4" y="66.04" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="280.67" y="67.31" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SUPPLY14" gate="G$1" x="276.86" y="76.2" smashed="yes" grouprefs="START_MODULE">
+<attribute name="VALUE" x="276.86" y="78.994" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND15" gate="1" x="276.86" y="50.8" smashed="yes" grouprefs="START_MODULE">
+<attribute name="VALUE" x="276.86" y="50.546" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SM_KILL" gate="G$1" x="279.4" y="60.96" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="280.67" y="62.23" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SM_GND" gate="G$1" x="279.4" y="55.88" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="280.67" y="57.15" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1739,6 +1823,12 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="200.66" y1="63.5" x2="195.58" y2="63.5" width="0.1524" layer="91" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="195.58" y1="63.5" x2="195.58" y2="55.88" width="0.1524" layer="91" grouprefs="STEERING_SERVO_FEEDBACK"/>
+</segment>
+<segment>
+<pinref part="SM_GND" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="279.4" y1="55.88" x2="276.86" y2="55.88" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<wire x1="276.86" y1="55.88" x2="276.86" y2="53.34" width="0.1524" layer="91" grouprefs="START_MODULE"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1919,6 +2009,12 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
 <wire x1="200.66" y1="73.66" x2="195.58" y2="73.66" width="0.1524" layer="91" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="195.58" y1="73.66" x2="195.58" y2="78.74" width="0.1524" layer="91" grouprefs="STEERING_SERVO_FEEDBACK"/>
+</segment>
+<segment>
+<pinref part="SM_3.3V" gate="G$1" pin="1"/>
+<pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
+<wire x1="279.4" y1="71.12" x2="276.86" y2="71.12" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<wire x1="276.86" y1="71.12" x2="276.86" y2="76.2" width="0.1524" layer="91" grouprefs="START_MODULE"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2149,6 +2245,30 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <label x="104.14" y="218.44" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="KILL" class="0">
+<segment>
+<pinref part="SM_KILL" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="60.96" x2="264.16" y2="60.96" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<label x="266.7" y="60.96" size="1.778" layer="95" grouprefs="START_MODULE"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA3"/>
+<wire x1="121.92" y1="213.36" x2="101.6" y2="213.36" width="0.1524" layer="91"/>
+<label x="104.14" y="213.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="START" class="0">
+<segment>
+<pinref part="SM_START" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="66.04" x2="264.16" y2="66.04" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<label x="266.7" y="66.04" size="1.778" layer="95" grouprefs="START_MODULE"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA2"/>
+<wire x1="121.92" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
+<label x="104.14" y="215.9" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -2162,6 +2282,9 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <approved hash="104,1,167.64,226.06,U1,VDDA,3.3V,,,"/>
 <approved hash="104,1,167.64,187.96,U1,VSS,GND,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
+<approved hash="113,1,202.822,73.66,FB+,,,,,"/>
+<approved hash="113,1,206.935,68.58,FB_SIGNAL,,,,,"/>
+<approved hash="113,1,202.822,63.5,FB-,,,,,"/>
 </errors>
 </schematic>
 </drawing>
