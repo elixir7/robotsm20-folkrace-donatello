@@ -1423,9 +1423,12 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <wire x1="236.22" y1="45.72" x2="236.22" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="236.22" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="165.1" y1="33.02" x2="165.1" y2="45.72" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
-<text x="30.48" y="22.86" size="2.54" layer="94">Check before production:
-- Check Hardware app note
-- 3.3V reg again.
+<text x="30.48" y="12.7" size="2.54" layer="94">TODO:
+- Add encoder input for drive motor.
+
+Check before production:
+- Check Hardware app note for stm32 f0
+- 3.3V regulator values
 - That the FB on servo indeed is a pot
   and does not need V_divider
 - Double check pinout
