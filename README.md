@@ -1,5 +1,4 @@
 # Donatello Folkrace robot
- ![3D scan with texture](img/3d-scan.png)
 He look.
 
 He think.
@@ -39,10 +38,10 @@ Contains 2 DC motor drivers (MAX14780) and connector the for battery.
 # 3D Scan
 Point cloud data of the base car, a Kyosho Mini Z Inferno Buggy.
 
-![3D Scan of Kyosho Mini Z Inferno Buggy](img/point-cloud.png)
+![3D Scan of Kyosho Mini Z Inferno Buggy](img/point-cloud.PNG)
  
  Post processed 3D Scan with textures.
 
- ![3D scan with texture](img/3d-scan.png)
+ ![3D scan with texture](img/3d-scan.PNG)
 
 
