@@ -32,13 +32,16 @@ It's the brain of the robot and contains a STM32F031G6 Arm Cortex M0 microcontro
 ## Motor board
 
 ![Motor board](img/left.png)
+
 Contains 2 DC motor drivers (MAX14780) and connector the for battery.
 
 # 3D Scan
 Point cloud data of the base car, a Kyosho Mini Z Inferno Buggy.
 
-![3D Scan of Kyosho Mini Z Inferno Buggy](img/point_cloud.png)
+![3D Scan of Kyosho Mini Z Inferno Buggy](img/point-cloud.png)
  
  Post processed 3D Scan with textures.
+ 
+ ![3D scan with texture](img/3d-scan.png)
 
- ![3D scan with texture](img/3D_scan.png)
+
