@@ -1190,8 +1190,8 @@ Driver tries to keep voltage over RSNS to 100mV.
 <approved hash="102,1,274.32,205.74,3.3V,VIN,,,,"/>
 <approved hash="102,1,185.42,35.56,3.3V,VIN,,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
-<approved hash="113,1,191.962,30.48,BATT+,,,,,"/>
-<approved hash="113,1,191.574,27.94,BATT-,,,,,"/>
+<approved hash="113,1,191.572,30.48,BATT+,,,,,"/>
+<approved hash="113,1,191.572,27.94,BATT-,,,,,"/>
 </errors>
 </schematic>
 </drawing>

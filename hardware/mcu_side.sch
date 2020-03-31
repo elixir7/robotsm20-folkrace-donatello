@@ -1343,6 +1343,7 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <schematic_group name="I2C_PULLUP"/>
 <schematic_group name="STEERING_SERVO_FEEDBACK"/>
 <schematic_group name="START_MODULE"/>
+<schematic_group name="ENCODER"/>
 </groups>
 <parts>
 <part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
@@ -1410,6 +1411,12 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <part name="GND15" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SM_KILL" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
 <part name="SM_GND" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="ENC_3.3V" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="ENC_A" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="SUPPLY15" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
+<part name="GND16" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
+<part name="ENC_B" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="ENC_GND" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1423,17 +1430,9 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <wire x1="236.22" y1="45.72" x2="236.22" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="236.22" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="165.1" y1="33.02" x2="165.1" y2="45.72" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
-<text x="30.48" y="12.7" size="2.54" layer="94">TODO:
-- Add encoder input for drive motor.
-
-Check before production:
-- Check Hardware app note for stm32 f0
-- 3.3V regulator values
+<text x="33.02" y="27.94" size="2.54" layer="94">Check before production:
 - That the FB on servo indeed is a pot
-  and does not need V_divider
-- Double check pinout
-- Double check ERC + DRC
-- Check Silcscreen</text>
+  and does not need V_divider</text>
 </plain>
 <instances>
 <instance part="S1" gate="G$1" x="299.72" y="220.98" smashed="yes" grouprefs="POWER">
@@ -1643,23 +1642,41 @@ Check before production:
 <instance part="GND14" gate="1" x="195.58" y="53.34" smashed="yes" grouprefs="STEERING_SERVO_FEEDBACK">
 <attribute name="VALUE" x="195.58" y="53.086" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SM_3.3V" gate="G$1" x="279.4" y="71.12" smashed="yes" grouprefs="START_MODULE">
-<attribute name="NAME" x="280.67" y="72.39" size="1.778" layer="95" font="vector"/>
+<instance part="SM_3.3V" gate="G$1" x="274.32" y="73.66" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="275.59" y="74.93" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="SM_START" gate="G$1" x="279.4" y="66.04" smashed="yes" grouprefs="START_MODULE">
-<attribute name="NAME" x="280.67" y="67.31" size="1.778" layer="95" font="vector"/>
+<instance part="SM_START" gate="G$1" x="274.32" y="68.58" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="275.59" y="69.85" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="SUPPLY14" gate="G$1" x="276.86" y="76.2" smashed="yes" grouprefs="START_MODULE">
-<attribute name="VALUE" x="276.86" y="78.994" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY14" gate="G$1" x="271.78" y="78.74" smashed="yes" grouprefs="START_MODULE">
+<attribute name="VALUE" x="271.78" y="81.534" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND15" gate="1" x="276.86" y="50.8" smashed="yes" grouprefs="START_MODULE">
-<attribute name="VALUE" x="276.86" y="50.546" size="1.778" layer="96" align="top-center"/>
+<instance part="GND15" gate="1" x="271.78" y="53.34" smashed="yes" grouprefs="START_MODULE">
+<attribute name="VALUE" x="271.78" y="53.086" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SM_KILL" gate="G$1" x="279.4" y="60.96" smashed="yes" grouprefs="START_MODULE">
-<attribute name="NAME" x="280.67" y="62.23" size="1.778" layer="95" font="vector"/>
+<instance part="SM_KILL" gate="G$1" x="274.32" y="63.5" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="275.59" y="64.77" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="SM_GND" gate="G$1" x="279.4" y="55.88" smashed="yes" grouprefs="START_MODULE">
-<attribute name="NAME" x="280.67" y="57.15" size="1.778" layer="95" font="vector"/>
+<instance part="SM_GND" gate="G$1" x="274.32" y="58.42" smashed="yes" grouprefs="START_MODULE">
+<attribute name="NAME" x="275.59" y="59.69" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="ENC_3.3V" gate="G$1" x="322.58" y="73.66" smashed="yes" grouprefs="ENCODER">
+<attribute name="NAME" x="323.85" y="74.93" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="ENC_A" gate="G$1" x="322.58" y="68.58" smashed="yes" grouprefs="ENCODER">
+<attribute name="NAME" x="323.85" y="69.85" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SUPPLY15" gate="G$1" x="320.04" y="78.74" smashed="yes" grouprefs="ENCODER">
+<attribute name="VALUE" x="320.04" y="81.534" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="GND16" gate="1" x="320.04" y="53.34" smashed="yes" grouprefs="ENCODER">
+<attribute name="VALUE" x="320.04" y="53.086" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="ENC_B" gate="G$1" x="322.58" y="63.5" smashed="yes" grouprefs="ENCODER">
+<attribute name="NAME" x="323.85" y="64.77" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="ENC_GND" gate="G$1" x="322.58" y="58.42" smashed="yes" grouprefs="ENCODER">
+<attribute name="NAME" x="323.85" y="59.69" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -1830,8 +1847,14 @@ Check before production:
 <segment>
 <pinref part="SM_GND" gate="G$1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="279.4" y1="55.88" x2="276.86" y2="55.88" width="0.1524" layer="91" grouprefs="START_MODULE"/>
-<wire x1="276.86" y1="55.88" x2="276.86" y2="53.34" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<wire x1="274.32" y1="58.42" x2="271.78" y2="58.42" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<wire x1="271.78" y1="58.42" x2="271.78" y2="55.88" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+</segment>
+<segment>
+<pinref part="ENC_GND" gate="G$1" pin="1"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="322.58" y1="58.42" x2="320.04" y2="58.42" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<wire x1="320.04" y1="58.42" x2="320.04" y2="55.88" width="0.1524" layer="91" grouprefs="ENCODER"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1873,14 +1896,14 @@ Check before production:
 </net>
 <net name="MOTOR_DIR" class="0">
 <segment>
-<wire x1="187.96" y1="200.66" x2="167.64" y2="200.66" width="0.1524" layer="91" grouprefs="MCU"/>
-<pinref part="U1" gate="G$1" pin="PB5"/>
-<label x="170.18" y="200.66" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="182.88" y1="124.46" x2="162.56" y2="124.46" width="0.1524" layer="91" grouprefs="MOTOR_BOARD_CON"/>
 <pinref part="CON1" gate="G$1" pin="3"/>
 <label x="165.1" y="124.46" size="1.778" layer="95" grouprefs="MOTOR_BOARD_CON"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB6"/>
+<wire x1="167.64" y1="198.12" x2="187.96" y2="198.12" width="0.1524" layer="91"/>
+<label x="170.18" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOTOR_PWM" class="0">
@@ -1902,9 +1925,9 @@ Check before production:
 <label x="165.1" y="121.92" size="1.778" layer="95" grouprefs="MOTOR_BOARD_CON"/>
 </segment>
 <segment>
-<wire x1="187.96" y1="203.2" x2="167.64" y2="203.2" width="0.1524" layer="91" grouprefs="MCU"/>
-<pinref part="U1" gate="G$1" pin="PB4"/>
-<label x="170.18" y="203.2" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="PB7"/>
+<wire x1="167.64" y1="195.58" x2="187.96" y2="195.58" width="0.1524" layer="91"/>
+<label x="170.18" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="STEER_PWM" class="0">
@@ -2016,8 +2039,14 @@ Check before production:
 <segment>
 <pinref part="SM_3.3V" gate="G$1" pin="1"/>
 <pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
-<wire x1="279.4" y1="71.12" x2="276.86" y2="71.12" width="0.1524" layer="91" grouprefs="START_MODULE"/>
-<wire x1="276.86" y1="71.12" x2="276.86" y2="76.2" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<wire x1="274.32" y1="73.66" x2="271.78" y2="73.66" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<wire x1="271.78" y1="73.66" x2="271.78" y2="78.74" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+</segment>
+<segment>
+<pinref part="ENC_3.3V" gate="G$1" pin="1"/>
+<pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
+<wire x1="322.58" y1="73.66" x2="320.04" y2="73.66" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<wire x1="320.04" y1="73.66" x2="320.04" y2="78.74" width="0.1524" layer="91" grouprefs="ENCODER"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2127,8 +2156,8 @@ Check before production:
 <label x="109.22" y="121.92" size="1.778" layer="95" grouprefs="SENSORS"/>
 </segment>
 <segment>
-<wire x1="187.96" y1="210.82" x2="167.64" y2="210.82" width="0.1524" layer="91" grouprefs="MCU"/>
 <pinref part="U1" gate="G$1" pin="PB0"/>
+<wire x1="167.64" y1="210.82" x2="187.96" y2="210.82" width="0.1524" layer="91"/>
 <label x="170.18" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -2217,8 +2246,8 @@ Check before production:
 <label x="241.3" y="114.3" size="2.54" layer="95" rot="R180" xref="yes" grouprefs="LED"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="220.98" x2="101.6" y2="220.98" width="0.1524" layer="91" grouprefs="MCU"/>
 <pinref part="U1" gate="G$1" pin="PA0"/>
+<wire x1="121.92" y1="220.98" x2="101.6" y2="220.98" width="0.1524" layer="91"/>
 <label x="104.14" y="220.98" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -2251,8 +2280,8 @@ Check before production:
 <net name="KILL" class="0">
 <segment>
 <pinref part="SM_KILL" gate="G$1" pin="1"/>
-<wire x1="279.4" y1="60.96" x2="264.16" y2="60.96" width="0.1524" layer="91" grouprefs="START_MODULE"/>
-<label x="266.7" y="60.96" size="1.778" layer="95" grouprefs="START_MODULE"/>
+<wire x1="274.32" y1="63.5" x2="259.08" y2="63.5" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<label x="261.62" y="63.5" size="1.778" layer="95" grouprefs="START_MODULE"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PA3"/>
@@ -2263,13 +2292,37 @@ Check before production:
 <net name="START" class="0">
 <segment>
 <pinref part="SM_START" gate="G$1" pin="1"/>
-<wire x1="279.4" y1="66.04" x2="264.16" y2="66.04" width="0.1524" layer="91" grouprefs="START_MODULE"/>
-<label x="266.7" y="66.04" size="1.778" layer="95" grouprefs="START_MODULE"/>
+<wire x1="274.32" y1="68.58" x2="259.08" y2="68.58" width="0.1524" layer="91" grouprefs="START_MODULE"/>
+<label x="261.62" y="68.58" size="1.778" layer="95" grouprefs="START_MODULE"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PA2"/>
 <wire x1="121.92" y1="215.9" x2="101.6" y2="215.9" width="0.1524" layer="91"/>
 <label x="104.14" y="215.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ENC_A" class="0">
+<segment>
+<wire x1="187.96" y1="203.2" x2="167.64" y2="203.2" width="0.1524" layer="91" grouprefs="MCU"/>
+<pinref part="U1" gate="G$1" pin="PB4"/>
+<label x="170.18" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ENC_A" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="68.58" x2="307.34" y2="68.58" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<label x="309.88" y="68.58" size="1.778" layer="95" grouprefs="ENCODER"/>
+</segment>
+</net>
+<net name="ENC_B" class="0">
+<segment>
+<wire x1="187.96" y1="200.66" x2="167.64" y2="200.66" width="0.1524" layer="91" grouprefs="MCU"/>
+<pinref part="U1" gate="G$1" pin="PB5"/>
+<label x="170.18" y="200.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ENC_B" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="63.5" x2="307.34" y2="63.5" width="0.1524" layer="91" grouprefs="ENCODER"/>
+<label x="309.88" y="63.5" size="1.778" layer="95" grouprefs="ENCODER"/>
 </segment>
 </net>
 </nets>

@@ -157,7 +157,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwNzE0MjAzNTUxMTMx" f3durn="urn:adsk.wipprod:dm.lineage:1clVY5FGTCCV0ajQSRwl3g" pcbguid="783a7e7e-69a0-495a-9315-ab4b5d70f980" lastpulledtime="2020-03-22T11:13:07Z" lastsyncedchangeguid="f4db2b18-2fb6-4da6-bb7d-1190b280ad9a" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="67bc97d1-06d8-deee-43ad-0399beedf54e" lastpushedtime="2020-03-22T12:02:06Z" linktopcb3d="%12"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYjM5YWQ2" projecturn="a.cGVyc29uYWw6dWUyYjM5YWQ2IzIwMTkwNzE0MjAzNTUxMTMx" f3durn="urn:adsk.wipprod:dm.lineage:1clVY5FGTCCV0ajQSRwl3g" pcbguid="783a7e7e-69a0-495a-9315-ab4b5d70f980" lastpulledtime="2020-03-22T11:13:07Z" lastsyncedchangeguid="f4db2b18-2fb6-4da6-bb7d-1190b280ad9a" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="5590cb52-93c9-5169-e75e-158b35ebf609" lastpushedtime="2020-03-31T08:37:41Z" linktopcb3d="%12"/>
 <plain>
 <hole x="4" y="19.1" drill="2.2"/>
 <hole x="4" y="1.9" drill="2.2"/>
