@@ -91,11 +91,11 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_GPIO_WritePin(MOTOR_DIR_GPIO_Port, MOTOR_DIR_Pin, GPIO_PIN_SET);
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+  //HAL_GPIO_WritePin(MOTOR_DIR_GPIO_Port, MOTOR_DIR_Pin, GPIO_PIN_SET);
+  //HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
 
-  HAL_GPIO_WritePin(STEER_DIR_GPIO_Port,  STEER_DIR_Pin, GPIO_PIN_SET);
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
+  //HAL_GPIO_WritePin(STEER_DIR_GPIO_Port,  STEER_DIR_Pin, GPIO_PIN_SET);
+  //HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
 
   /* USER CODE END 2 */
 

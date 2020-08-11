@@ -1,8 +1,0 @@
-"Qty";"Value";"Device";"Package";"Parts";"Description";"POPULARITY";
-"2";"";"SMD2";"SMD1,27-2,54";"BATT+, BATT-";"SMD PAD";"15";
-"2";"1u";"C0603";"C0603";"C1, C2";"Standard Chip CAPACITOR 0605 (1608 Metric)";"";
-"1";"JST-XH-02";"XH-02";"JST-XH-02";"MOTOR";"JST EX Connector, through hole, 2 pin, top entry";"";
-"1";"JST-ZH-02";"ZR_B2B-ZR";"B2B-ZR";"STEER";"JST ZR Connector, through hole, 2 pin, top entry";"";
-"1";"JST-ZR-06";"ZR_B6B-ZR";"B6B-ZR";"MCU_BOARD_CON";"JST ZR Connector, through hole, 6 pin, top entry";"";
-"2";"MAX14870";"MAX14870";"12_TDFN_EP";"U1, U2";"";"";
-"2";"NP";"R1206";"R1206";"RSNS, RSNS1";"Standard Chip RESISTOR 1206 (3216 Metric)";"";

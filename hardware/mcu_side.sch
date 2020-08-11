@@ -160,29 +160,6 @@
 <libraries>
 <library name="Isaks Bibliotek" urn="urn:adsk.eagle:library:11889733">
 <packages>
-<package name="LMZ21701" urn="urn:adsk.eagle:footprint:12971302/1" library_version="26">
-<description>&lt;b&gt;LMZ21701SILR&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-1.475" y="1.2" dx="0.45" dy="0.4" layer="1"/>
-<smd name="2" x="-1.475" y="0.4" dx="0.45" dy="0.4" layer="1"/>
-<smd name="3" x="-1.475" y="-0.4" dx="0.45" dy="0.4" layer="1"/>
-<smd name="4" x="-1.475" y="-1.2" dx="0.45" dy="0.4" layer="1"/>
-<smd name="5" x="1.475" y="-1.2" dx="0.45" dy="0.4" layer="1"/>
-<smd name="6" x="1.475" y="-0.4" dx="0.45" dy="0.4" layer="1"/>
-<smd name="7" x="1.475" y="0.4" dx="0.45" dy="0.4" layer="1"/>
-<smd name="8" x="1.475" y="1.2" dx="0.45" dy="0.4" layer="1"/>
-<smd name="9" x="-0.55" y="0" dx="1.9" dy="0.8" layer="1" rot="R90"/>
-<smd name="10" x="0.55" y="0" dx="1.9" dy="0.8" layer="1" rot="R90"/>
-<text x="-2.54" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-1.75" y1="1.75" x2="1.75" y2="1.75" width="0.254" layer="51"/>
-<wire x1="1.75" y1="1.75" x2="1.75" y2="-1.75" width="0.254" layer="51"/>
-<wire x1="-1.75" y1="-1.75" x2="-1.75" y2="1.75" width="0.254" layer="51"/>
-<wire x1="-1.75" y1="-1.75" x2="1.75" y2="-1.75" width="0.254" layer="51"/>
-<wire x1="-1.75" y1="-1.75" x2="1.75" y2="-1.75" width="0.254" layer="21"/>
-<wire x1="-1.75" y1="1.75" x2="1.75" y2="1.75" width="0.254" layer="21"/>
-<circle x="-2.321" y="1.472" radius="0.094809375" width="0.254" layer="25"/>
-</package>
 <package name="QFN50P400X400X60-28N" urn="urn:adsk.eagle:footprint:18399454/1" library_version="28">
 <wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="51"/>
 <wire x1="2" y1="2" x2="2" y2="-2" width="0.127" layer="51"/>
@@ -244,14 +221,29 @@ Used as a test point connection for pogo pins or other debugging tools.
 <smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
 <text x="-2.413" y="0.889" size="1.016" layer="21" font="vector" ratio="15" distance="70">&gt;NAME</text>
 </package>
+<package name="SOT230P700X180-4" urn="urn:adsk.eagle:footprint:12215323/1" library_version="33">
+<description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
+&lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
+<circle x="-2.9276" y="3.2486" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.85" y1="2.9986" x2="-1.85" y2="3.35" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="3.35" x2="1.85" y2="3.35" width="0.12" layer="21"/>
+<wire x1="1.85" y1="3.35" x2="1.85" y2="1.8486" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="-2.9986" x2="-1.85" y2="-3.35" width="0.12" layer="21"/>
+<wire x1="-1.85" y1="-3.35" x2="1.85" y2="-3.35" width="0.12" layer="21"/>
+<wire x1="1.85" y1="-3.35" x2="1.85" y2="-1.8486" width="0.12" layer="21"/>
+<wire x1="1.85" y1="-3.35" x2="-1.85" y2="-3.35" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="-3.35" x2="-1.85" y2="3.35" width="0.12" layer="51"/>
+<wire x1="-1.85" y1="3.35" x2="1.85" y2="3.35" width="0.12" layer="51"/>
+<wire x1="1.85" y1="3.35" x2="1.85" y2="-3.35" width="0.12" layer="51"/>
+<smd name="1" x="-3.0226" y="2.3" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="2" x="-3.0226" y="0" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="3" x="-3.0226" y="-2.3" dx="1.9651" dy="0.8891" layer="1"/>
+<smd name="4" x="3.0226" y="0" dx="1.9651" dy="3.1891" layer="1"/>
+<text x="0" y="4.1336" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.985" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
-<package3d name="LMZ21701" urn="urn:adsk.eagle:package:12971317/2" type="model" library_version="26">
-<description>&lt;b&gt;LMZ21701SILR&lt;/b&gt;&lt;br&gt;</description>
-<packageinstances>
-<packageinstance name="LMZ21701"/>
-</packageinstances>
-</package3d>
 <package3d name="QFN50P400X400X60-28N" urn="urn:adsk.eagle:package:18399455/2" type="model" library_version="28">
 <packageinstances>
 <packageinstance name="QFN50P400X400X60-28N"/>
@@ -270,26 +262,15 @@ Used as a test point connection for pogo pins or other debugging tools.
 <packageinstance name="PAD.03X.05"/>
 </packageinstances>
 </package3d>
+<package3d name="SOT230P700X180-4" urn="urn:adsk.eagle:package:12215314/1" type="model" library_version="33">
+<description>4-SOT223, 2.30 mm pitch, 7.00 mm span, 6.50 X 3.50 X 1.80 mm body
+&lt;p&gt;4-pin SOT223 package with 2.30 mm pitch, 7.00 mm span with body size 6.50 X 3.50 X 1.80 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT230P700X180-4"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
-<symbol name="LMZ21701SILR" urn="urn:adsk.eagle:symbol:12971268/2" library_version="26">
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-22.86" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="SS" x="-12.7" y="-5.08" length="short"/>
-<pin name="FB" x="12.7" y="-10.16" length="short" rot="R180"/>
-<pin name="PG" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="VOUT" x="12.7" y="5.08" length="short" direction="sup" rot="R180"/>
-<pin name="GND@1" x="-12.7" y="-10.16" length="short" direction="sup"/>
-<pin name="VOS" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="EN" x="-12.7" y="0" length="short"/>
-<pin name="VIN" x="-12.7" y="5.08" length="short" direction="pwr"/>
-<pin name="GND@2" x="-12.7" y="-15.24" length="short" direction="sup"/>
-<pin name="GND@3" x="-12.7" y="-20.32" length="short" direction="sup"/>
-</symbol>
 <symbol name="3.3V" urn="urn:adsk.eagle:symbol:12971278/1" library_version="26">
 <description>&lt;h3&gt;3.3v Voltage Supply&lt;/h3&gt;</description>
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -345,44 +326,22 @@ Used as a test point connection for pogo pins or other debugging tools.
 <pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
 <circle x="3.556" y="0" radius="1" width="0.254" layer="94"/>
 </symbol>
+<symbol name="LM1117" urn="urn:adsk.eagle:symbol:12971288/2" library_version="33">
+<wire x1="10.16" y1="3.81" x2="-10.16" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="3.81" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="3.81" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="0" visible="off" length="short" direction="pwr"/>
+<pin name="VOUT" x="12.7" y="0" visible="off" length="short" direction="sup" rot="R180"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-8.89" y="-1.27" size="1.778" layer="97">VIN</text>
+<text x="2.54" y="-1.27" size="1.778" layer="97">VOUT</text>
+<text x="-2.54" y="-3.81" size="1.778" layer="97">GND</text>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="LMZ21701" urn="urn:adsk.eagle:component:12971329/3" prefix="S" library_version="26">
-<description>&lt;b&gt;3V to 17V, 1A Step-Down DC/DC Power Module in 3.5mm  3.5mm Package&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LMZ21701SILR" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="" package="LMZ21701">
-<connects>
-<connect gate="G$1" pin="EN" pad="7"/>
-<connect gate="G$1" pin="FB" pad="2"/>
-<connect gate="G$1" pin="GND@1" pad="5"/>
-<connect gate="G$1" pin="GND@2" pad="9"/>
-<connect gate="G$1" pin="GND@3" pad="10"/>
-<connect gate="G$1" pin="PG" pad="3"/>
-<connect gate="G$1" pin="SS" pad="1"/>
-<connect gate="G$1" pin="VIN" pad="8"/>
-<connect gate="G$1" pin="VOS" pad="6"/>
-<connect gate="G$1" pin="VOUT" pad="4"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12971317/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="3V to 17V, 1A Step-Down DC/DC Power Module in 3.5mm  3.5mm Package" constant="no"/>
-<attribute name="HEIGHT" value="mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="LMZ21701SILR" constant="no"/>
-<attribute name="MOUSER_PART_NUMBER" value="595-LMZ21701SILR" constant="no"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=595-LMZ21701SILR" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="3.3V" urn="urn:adsk.eagle:component:12971340/1" prefix="SUPPLY" library_version="26">
 <description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;</description>
 <gates>
@@ -483,6 +442,42 @@ Source: &lt;a href="http://www.mouser.com/ds/2/405/lmz21701-469837.pdf"&gt; Data
 </device>
 </devices>
 </deviceset>
+<deviceset name="LM1117-3.3" urn="urn:adsk.eagle:component:12971348/2" prefix="VR" library_version="33">
+<description>&lt;b&gt;LM1117&lt;/b&gt;&lt;hr /&gt;
+&lt;br /&gt;
+&lt;i&gt;Description: &lt;/i&gt;&lt;br /&gt;
+Fixed output voltage regulator
+Out: 3.3V, 800mA
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;i&gt;Link: &lt;/i&gt;
+&lt;a href="https://datasheet.lcsc.com/szlcsc/Texas-Instruments-TI-LM1117IMPX-3-3-NOPB_C23984.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;i&gt;LCSC.nr: C23984&lt;/i&gt;</description>
+<gates>
+<gate name="G$1" symbol="LM1117" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT230P700X180-4">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2 4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12215314/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="IMAX" value="800mA" constant="no"/>
+<attribute name="VIN_MAX" value="20" constant="no"/>
+<attribute name="VOUT" value="3.3V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="frames" urn="urn:adsk.eagle:library:229">
@@ -568,21 +563,21 @@ DIN A3, landscape with location and doc. field</description>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="C0805" urn="urn:adsk.eagle:footprint:5332296/1" library_version="15">
-<description>&lt;b&gt;Chip CAPACITOR 0805 (2012 Metric)&lt;/b&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<package name="C1206" urn="urn:adsk.eagle:footprint:5332295/1" library_version="15">
+<description>&lt;b&gt;Chip CAPACITOR 1206 (3216 Metric)&lt;/b&gt;</description>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 </packages>
 <packages3d>
@@ -598,10 +593,10 @@ DIN A3, landscape with location and doc. field</description>
 <packageinstance name="C0603"/>
 </packageinstances>
 </package3d>
-<package3d name="C0805" urn="urn:adsk.eagle:package:5332304/3" type="model" library_version="15">
-<description>&lt;b&gt;Chip CAPACITOR 0805 (2012 Metric)&lt;/b&gt;</description>
+<package3d name="C1206" urn="urn:adsk.eagle:package:5332303/3" type="model" library_version="15">
+<description>&lt;b&gt;Chip CAPACITOR 1206 (3216 Metric)&lt;/b&gt;</description>
 <packageinstances>
-<packageinstance name="C0805"/>
+<packageinstance name="C1206"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -700,11 +695,11 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C0805" urn="urn:adsk.eagle:component:5332320/3" prefix="C" uservalue="yes" library_version="15">
-<description>&lt;b&gt;&lt;b&gt;Standard Chip CAPACITOR 0805 (2012 Metric)&lt;/b&gt;
+<deviceset name="C1206" urn="urn:adsk.eagle:component:5332319/3" prefix="C" uservalue="yes" library_version="15">
+<description>&lt;b&gt;&lt;b&gt;Standard Chip CAPACITOR 1206 (3216 Metric)&lt;/b&gt;
 &lt;/b&gt;&lt;hr /&gt;
 &lt;br /&gt;
-&lt;i&gt;Description: &lt;/i&gt; Standard Chip CAPACITOR 0805 (2012 Metric)
+&lt;i&gt;Description: &lt;/i&gt; Standard Chip CAPACITOR 1206 (3216 Metric)
 
 &lt;br /&gt;
 &lt;br /&gt;
@@ -722,13 +717,13 @@ DIN A3, landscape with location and doc. field</description>
 <gate name="G$1" symbol="C-EU" x="0" y="1.27"/>
 </gates>
 <devices>
-<device name="" package="C0805">
+<device name="" package="C1206">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:5332304/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5332303/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1346,19 +1341,10 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <schematic_group name="ENCODER"/>
 </groups>
 <parts>
-<part name="S1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LMZ21701" device="" package3d_urn="urn:adsk.eagle:package:12971317/2"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="R1" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="20k"/>
-<part name="CSS" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="C0603" device="" package3d_urn="urn:adsk.eagle:package:5332305/5" value="3300p"/>
-<part name="SUPPLY1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
-<part name="GND1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device="" value="VIN"/>
 <part name="R2" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="10k"/>
-<part name="GND2" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
-<part name="RFBT" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="1.2M"/>
-<part name="RFBB" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="R0603" device="" package3d_urn="urn:adsk.eagle:package:5332309/4" value="380k"/>
-<part name="CIN" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
-<part name="COUT" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="C0805" device="" package3d_urn="urn:adsk.eagle:package:5332304/3" value="10u"/>
 <part name="CON1" library="CASE-JST" library_urn="urn:adsk.eagle:library:5637561" deviceset="ZR_B6B-ZR" device="" package3d_urn="urn:adsk.eagle:package:5644773/2" value="JST-ZR-06"/>
 <part name="SUPPLY3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device="" value="VIN"/>
 <part name="GND3" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
@@ -1417,6 +1403,11 @@ Source: http://www.osram.convergy.de/ ... Lb_q993.pdf</description>
 <part name="GND16" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
 <part name="ENC_B" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
 <part name="ENC_GND" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="PAD-SMD-ROUND-1.27" device="PAD" package3d_urn="urn:adsk.eagle:package:13270955/1"/>
+<part name="VR1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="LM1117-3.3" device="" package3d_urn="urn:adsk.eagle:package:12215314/1"/>
+<part name="C3" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="C1206" device="" package3d_urn="urn:adsk.eagle:package:5332303/3" value="10u"/>
+<part name="C6" library="CASE-RCL" library_urn="urn:adsk.eagle:library:5287922" deviceset="C1206" device="" package3d_urn="urn:adsk.eagle:package:5332303/3" value="10u"/>
+<part name="GND17" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="Isaks Bibliotek" library_urn="urn:adsk.eagle:library:11889733" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1430,59 +1421,23 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <wire x1="236.22" y1="45.72" x2="236.22" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="236.22" y1="33.02" x2="165.1" y2="33.02" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
 <wire x1="165.1" y1="33.02" x2="165.1" y2="45.72" width="0.1524" layer="97" grouprefs="STEERING_SERVO_FEEDBACK"/>
-<text x="33.02" y="27.94" size="2.54" layer="94">Check before production:
-- That the FB on servo indeed is a pot
-  and does not need V_divider</text>
 </plain>
 <instances>
-<instance part="S1" gate="G$1" x="299.72" y="220.98" smashed="yes" grouprefs="POWER">
-<attribute name="NAME" x="289.56" y="195.58" size="1.778" layer="95"/>
-<attribute name="VALUE" x="302.26" y="231.14" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="R1" gate="G$1" x="259.08" y="218.44" smashed="yes" rot="R270" grouprefs="POWER">
-<attribute name="NAME" x="257.81" y="222.0214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="257.81" y="219.202" size="1.778" layer="96" rot="R180"/>
+<instance part="R1" gate="G$1" x="269.24" y="226.06" smashed="yes" rot="R270" grouprefs="POWER">
+<attribute name="NAME" x="267.97" y="229.6414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="267.97" y="226.822" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="CSS" gate="G$1" x="274.32" y="208.28" smashed="yes" grouprefs="POWER">
-<attribute name="NAME" x="275.844" y="208.661" size="1.778" layer="95"/>
-<attribute name="VALUE" x="275.844" y="203.581" size="1.778" layer="96"/>
+<instance part="SUPPLY2" gate="G$1" x="269.24" y="241.3" smashed="yes" grouprefs="POWER">
+<attribute name="VALUE" x="269.24" y="244.094" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="330.2" y="231.14" smashed="yes" grouprefs="POWER">
-<attribute name="VALUE" x="330.2" y="233.934" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="GND1" gate="1" x="274.32" y="177.8" smashed="yes" grouprefs="POWER">
-<attribute name="VALUE" x="274.32" y="177.546" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="SUPPLY2" gate="G$1" x="259.08" y="233.68" smashed="yes" grouprefs="POWER">
-<attribute name="VALUE" x="259.08" y="236.474" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="R2" gate="G$1" x="259.08" y="203.2" smashed="yes" rot="R270" grouprefs="POWER">
-<attribute name="NAME" x="257.81" y="206.7814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="257.81" y="203.962" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND2" gate="1" x="335.28" y="180.34" smashed="yes" grouprefs="POWER">
-<attribute name="VALUE" x="335.28" y="180.086" size="1.778" layer="96" align="top-center"/>
-</instance>
-<instance part="RFBT" gate="G$1" x="330.2" y="208.28" smashed="yes" rot="R90" grouprefs="POWER">
-<attribute name="NAME" x="328.93" y="211.8614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="328.93" y="209.042" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="RFBB" gate="G$1" x="330.2" y="193.04" smashed="yes" rot="R270" grouprefs="POWER">
-<attribute name="NAME" x="328.93" y="196.6214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="328.93" y="193.802" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="CIN" gate="G$1" x="266.7" y="208.28" smashed="yes" grouprefs="POWER">
-<attribute name="NAME" x="268.224" y="208.661" size="1.778" layer="95"/>
-<attribute name="VALUE" x="268.224" y="203.581" size="1.778" layer="96"/>
-</instance>
-<instance part="COUT" gate="G$1" x="340.36" y="215.9" smashed="yes" grouprefs="POWER">
-<attribute name="NAME" x="338.836" y="218.059" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="338.836" y="212.979" size="1.778" layer="96" rot="R180"/>
+<instance part="R2" gate="G$1" x="269.24" y="210.82" smashed="yes" rot="R270" grouprefs="POWER">
+<attribute name="NAME" x="267.97" y="214.4014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="267.97" y="211.582" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="CON1" gate="G$1" x="187.96" y="121.92" smashed="yes" grouprefs="MOTOR_BOARD_CON">
 <attribute name="NAME" x="181.61" y="132.715" size="1.778" layer="95"/>
@@ -1581,12 +1536,12 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <attribute name="NAME" x="247.65" y="133.1214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="247.65" y="130.302" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D2" gate="G$1" x="353.06" y="215.9" smashed="yes" grouprefs="POWER">
-<attribute name="NAME" x="350.52" y="218.44" size="1.778" layer="95" rot="R180"/>
+<instance part="D2" gate="G$1" x="335.28" y="226.06" smashed="yes" grouprefs="POWER">
+<attribute name="NAME" x="332.74" y="228.6" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="R4" gate="G$1" x="353.06" y="203.2" smashed="yes" rot="R270" grouprefs="POWER">
-<attribute name="NAME" x="351.79" y="206.7814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="351.79" y="203.962" size="1.778" layer="96" rot="R180"/>
+<instance part="R4" gate="G$1" x="335.28" y="210.82" smashed="yes" rot="R270" grouprefs="POWER">
+<attribute name="NAME" x="334.01" y="214.4014" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="334.01" y="211.582" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="RPUP1" gate="G$1" x="294.64" y="129.54" smashed="yes" rot="R270" grouprefs="I2C_PULLUP">
 <attribute name="NAME" x="293.37" y="133.1214" size="1.778" layer="95" rot="R180"/>
@@ -1678,78 +1633,50 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <instance part="ENC_GND" gate="G$1" x="322.58" y="58.42" smashed="yes" grouprefs="ENCODER">
 <attribute name="NAME" x="323.85" y="59.69" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="VR1" gate="G$1" x="299.72" y="233.68" smashed="yes" grouprefs="POWER">
+<attribute name="NAME" x="294.64" y="238.76" size="1.778" layer="95"/>
+<attribute name="VALUE" x="302.26" y="226.06" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="G$1" x="279.4" y="218.44" smashed="yes" grouprefs="POWER">
+<attribute name="NAME" x="280.924" y="218.821" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.924" y="213.741" size="1.778" layer="96"/>
+</instance>
+<instance part="C6" gate="G$1" x="320.04" y="218.44" smashed="yes" grouprefs="POWER">
+<attribute name="NAME" x="321.564" y="218.821" size="1.778" layer="95"/>
+<attribute name="VALUE" x="321.564" y="213.741" size="1.778" layer="96"/>
+</instance>
+<instance part="GND17" gate="1" x="299.72" y="185.42" smashed="yes" grouprefs="POWER">
+<attribute name="VALUE" x="299.72" y="185.166" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="SUPPLY1" gate="G$1" x="320.04" y="241.3" smashed="yes" grouprefs="POWER">
+<attribute name="VALUE" x="320.04" y="244.094" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VIN" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="VIN"/>
-<pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
-<wire x1="287.02" y1="226.06" x2="284.48" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="284.48" y1="226.06" x2="266.7" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="266.7" y1="226.06" x2="259.08" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="259.08" y1="226.06" x2="259.08" y2="233.68" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="266.7" y1="210.82" x2="266.7" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="266.7" y="226.06" grouprefs="POWER"/>
-<pinref part="S1" gate="G$1" pin="EN"/>
-<wire x1="287.02" y1="220.98" x2="284.48" y2="220.98" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="284.48" y1="220.98" x2="284.48" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="284.48" y="226.06" grouprefs="POWER"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="226.06" x2="259.08" y2="223.52" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="259.08" y="226.06" grouprefs="POWER"/>
-<pinref part="CIN" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="CON1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
 <wire x1="182.88" y1="129.54" x2="177.8" y2="129.54" width="0.1524" layer="91" grouprefs="MOTOR_BOARD_CON"/>
 <wire x1="177.8" y1="129.54" x2="177.8" y2="137.16" width="0.1524" layer="91" grouprefs="MOTOR_BOARD_CON"/>
 </segment>
+<segment>
+<pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="269.24" y1="231.14" x2="269.24" y2="233.68" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="VR1" gate="G$1" pin="VIN"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="269.24" y1="233.68" x2="269.24" y2="241.3" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="287.02" y1="233.68" x2="279.4" y2="233.68" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="279.4" y1="233.68" x2="279.4" y2="220.98" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="279.4" y1="233.68" x2="269.24" y2="233.68" width="0.1524" layer="91"/>
+<junction x="279.4" y="233.68"/>
+<junction x="269.24" y="233.68"/>
+</segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="S1" gate="G$1" pin="GND@1"/>
-<wire x1="287.02" y1="210.82" x2="284.48" y2="210.82" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="284.48" y1="210.82" x2="284.48" y2="205.74" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="S1" gate="G$1" pin="GND@3"/>
-<wire x1="284.48" y1="205.74" x2="284.48" y2="200.66" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="284.48" y1="200.66" x2="287.02" y2="200.66" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="S1" gate="G$1" pin="GND@2"/>
-<wire x1="287.02" y1="205.74" x2="284.48" y2="205.74" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="284.48" y="205.74" grouprefs="POWER"/>
-<wire x1="284.48" y1="200.66" x2="284.48" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="284.48" y="200.66" grouprefs="POWER"/>
-<wire x1="284.48" y1="195.58" x2="274.32" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="274.32" y1="195.58" x2="266.7" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="266.7" y1="195.58" x2="259.08" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="274.32" y1="180.34" x2="274.32" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="274.32" y="195.58" grouprefs="POWER"/>
-<pinref part="CSS" gate="G$1" pin="2"/>
-<wire x1="274.32" y1="203.2" x2="274.32" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="266.7" y1="203.2" x2="266.7" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="266.7" y="195.58" grouprefs="POWER"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="198.12" x2="259.08" y2="195.58" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="CIN" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="RFBB" gate="G$1" pin="2"/>
-<wire x1="330.2" y1="187.96" x2="330.2" y2="185.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="330.2" y1="185.42" x2="335.28" y2="185.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="335.28" y1="185.42" x2="335.28" y2="182.88" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="340.36" y1="210.82" x2="340.36" y2="185.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="340.36" y1="185.42" x2="335.28" y2="185.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="335.28" y="185.42" grouprefs="POWER"/>
-<pinref part="COUT" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="353.06" y1="198.12" x2="353.06" y2="185.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="353.06" y1="185.42" x2="340.36" y2="185.42" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="340.36" y="185.42"/>
-</segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="6"/>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -1856,42 +1783,42 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <wire x1="322.58" y1="58.42" x2="320.04" y2="58.42" width="0.1524" layer="91" grouprefs="ENCODER"/>
 <wire x1="320.04" y1="58.42" x2="320.04" y2="55.88" width="0.1524" layer="91" grouprefs="ENCODER"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="SS"/>
-<pinref part="CSS" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="215.9" x2="274.32" y2="215.9" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="274.32" y1="215.9" x2="274.32" y2="210.82" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="279.4" y1="213.36" x2="279.4" y2="203.2" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="279.4" y1="203.2" x2="299.72" y2="203.2" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="299.72" y1="187.96" x2="299.72" y2="203.2" width="0.1524" layer="91" grouprefs="POWER"/>
+<junction x="299.72" y="203.2" grouprefs="POWER"/>
+<pinref part="VR1" gate="G$1" pin="GND"/>
+<wire x1="299.72" y1="226.06" x2="299.72" y2="203.2" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="335.28" y1="205.74" x2="335.28" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="203.2" x2="320.04" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="320.04" y1="203.2" x2="299.72" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="213.36" x2="320.04" y2="203.2" width="0.1524" layer="91"/>
+<junction x="320.04" y="203.2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="269.24" y1="205.74" x2="269.24" y2="203.2" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="269.24" y1="203.2" x2="279.4" y2="203.2" width="0.1524" layer="91"/>
+<junction x="279.4" y="203.2"/>
 </segment>
 </net>
 <net name="VOLTM" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="213.36" x2="259.08" y2="210.82" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="269.24" y1="220.98" x2="269.24" y2="218.44" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="210.82" x2="259.08" y2="208.28" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="259.08" y1="210.82" x2="256.54" y2="210.82" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="259.08" y="210.82" grouprefs="POWER"/>
-<label x="256.54" y="210.82" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POWER"/>
+<wire x1="269.24" y1="218.44" x2="269.24" y2="215.9" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="269.24" y1="218.44" x2="266.7" y2="218.44" width="0.1524" layer="91" grouprefs="POWER"/>
+<junction x="269.24" y="218.44" grouprefs="POWER"/>
+<label x="266.7" y="218.44" size="1.778" layer="95" rot="R180" xref="yes" grouprefs="POWER"/>
 </segment>
 <segment>
 <wire x1="187.96" y1="208.28" x2="167.64" y2="208.28" width="0.1524" layer="91" grouprefs="MCU"/>
 <pinref part="U1" gate="G$1" pin="PB1"/>
 <label x="170.18" y="208.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="RFBT" gate="G$1" pin="1"/>
-<pinref part="RFBB" gate="G$1" pin="1"/>
-<wire x1="330.2" y1="203.2" x2="330.2" y2="200.66" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="S1" gate="G$1" pin="FB"/>
-<wire x1="330.2" y1="200.66" x2="330.2" y2="198.12" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="312.42" y1="210.82" x2="320.04" y2="210.82" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="320.04" y1="210.82" x2="320.04" y2="200.66" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="320.04" y1="200.66" x2="330.2" y2="200.66" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="330.2" y="200.66" grouprefs="POWER"/>
 </segment>
 </net>
 <net name="MOTOR_DIR" class="0">
@@ -1943,26 +1870,6 @@ the divider is  a potentiometer in the servo gearbox.</text>
 </segment>
 </net>
 <net name="3.3V" class="0">
-<segment>
-<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
-<wire x1="330.2" y1="226.06" x2="330.2" y2="231.14" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="330.2" y1="226.06" x2="340.36" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="340.36" y1="226.06" x2="340.36" y2="218.44" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="330.2" y="226.06" grouprefs="POWER"/>
-<pinref part="RFBT" gate="G$1" pin="2"/>
-<wire x1="330.2" y1="213.36" x2="330.2" y2="215.9" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="S1" gate="G$1" pin="VOUT"/>
-<wire x1="330.2" y1="215.9" x2="330.2" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="312.42" y1="226.06" x2="330.2" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="S1" gate="G$1" pin="VOS"/>
-<wire x1="312.42" y1="215.9" x2="330.2" y2="215.9" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="330.2" y="215.9" grouprefs="POWER"/>
-<pinref part="COUT" gate="G$1" pin="1"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="353.06" y1="218.44" x2="353.06" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="353.06" y1="226.06" x2="340.36" y2="226.06" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="340.36" y="226.06"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
 <wire x1="167.64" y1="228.6" x2="172.72" y2="228.6" width="0.1524" layer="91" grouprefs="MCU"/>
@@ -2047,6 +1954,18 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 <wire x1="322.58" y1="73.66" x2="320.04" y2="73.66" width="0.1524" layer="91" grouprefs="ENCODER"/>
 <wire x1="320.04" y1="73.66" x2="320.04" y2="78.74" width="0.1524" layer="91" grouprefs="ENCODER"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="VR1" gate="G$1" pin="VOUT"/>
+<wire x1="320.04" y1="220.98" x2="320.04" y2="233.68" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="320.04" y1="233.68" x2="312.42" y2="233.68" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="335.28" y1="228.6" x2="335.28" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="233.68" x2="320.04" y2="233.68" width="0.1524" layer="91"/>
+<junction x="320.04" y="233.68"/>
+<pinref part="SUPPLY1" gate="G$1" pin="3.3V"/>
+<wire x1="320.04" y1="233.68" x2="320.04" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -2261,7 +2180,7 @@ the divider is  a potentiometer in the servo gearbox.</text>
 <net name="N$5" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="K"/>
-<wire x1="353.06" y1="210.82" x2="353.06" y2="208.28" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="335.28" y1="220.98" x2="335.28" y2="215.9" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -2329,11 +2248,11 @@ the divider is  a potentiometer in the servo gearbox.</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,312.42,226.06,VOUT,3.3V,,,,"/>
-<approved hash="102,1,259.08,233.68,3.3V,VIN,,,,"/>
+<approved hash="102,1,269.24,241.3,3.3V,VIN,,,,"/>
 <approved hash="102,1,177.8,137.16,3.3V,VIN,,,,"/>
-<approved hash="201,1,177.8,137.16,3.3V,3.3V\, VIN,,,,"/>
-<approved hash="201,1,259.08,233.68,3.3V,3.3V\, VIN,,,,"/>
+<approved hash="102,1,312.42,233.68,VOUT,3.3V,,,,"/>
+<approved hash="201,1,177.8,137.16,3.3V,VIN\, 3.3V,,,,"/>
+<approved hash="201,1,269.24,241.3,3.3V,VIN\, 3.3V,,,,"/>
 <approved hash="104,1,167.64,228.6,U1,VDD,3.3V,,,"/>
 <approved hash="104,1,167.64,226.06,U1,VDDA,3.3V,,,"/>
 <approved hash="104,1,167.64,187.96,U1,VSS,GND,,,"/>
